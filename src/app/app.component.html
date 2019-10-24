@@ -19,14 +19,10 @@
 <a aria-label="Angular on twitter" rel="noopener" routerLink="/descartes" title="Twitter">listado de descartes</a>
 -->
 
-
 <div class="titulo">
-    <img src="../src/img/robot.png" style="width: 130px">
+    <img src="../assets/img/robot.png" style="width: 130px">
    <a><p style="margin-top: -30px">LucaTinder</p></a>
 </div>
-
-
-
 
 <div class="container">
 <div class="row">
@@ -40,24 +36,19 @@
               </div>
 
 
-              <form [formGroup]="form" novalidate>
+              <form #myform="ngForm" (ngSubmit)="login(myform)" class="form form-login">
             <!--  action="/perfil" method="post" name="principal">  -->
 
-      
-              
+                <div class="form-group">
+                    <input type="text" name="name" id="name"
+                        class="form-control" placeholder="Ingrese Alias de usuario"
+                        style="margin: auto" ngModel>
+                </div>
 
-
-              <div class="form-group">
-                  <input type="text" name="text" field="alias"
-                      class="form-control" placeholder="Ingrese Alias de usuario"
-                      style="margin: auto">
-              </div>
-
-              <div class="col-md-12 text-center ">
-                  <button type="submit" class=" btn btn-block mybtn btn-primary tx-tfm"
-                  class="btn btn-success"
-                  (click)="sesion(form)">Entrar</button>
-              </div>
+                <div class="col-md-12 text-center ">
+                    <input type="submit" class=" btn btn-block mybtn btn-primary tx-tfm"
+                    class="btn btn-success">
+                </div>
 
            
 
@@ -76,7 +67,7 @@
   </div>
   
   
-  
+  <!--
   <div id="second">
       <div class="myform form">
           <div class="logo mb-3">
@@ -92,6 +83,7 @@
           
       </div>
   </div>
+  -->
 </div>
 </div>
 </div>
