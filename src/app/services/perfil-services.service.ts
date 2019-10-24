@@ -21,9 +21,17 @@ export class PerfilServicesService {
     return this.http.post<Perfil>(this.perfilUrl, perfil);
   }
 
-  public contactos(id_perfil) {
-    return this.http.get(this.perfilUrl+'/listadoPerfiles/rest/'+id_perfil);
+  public getSesion(){
+    return this.http.get<Perfil>(this.perfilUrl+"/get/sesion");
   }
 
+  public contactos(id_perfil) {
+    return this.http.get<Perfil[]>(this.perfilUrl+'/listadoPerfiles/rest/'+id_perfil);
+  }
+/*
+  public contactos(id_perfil) {
+    return this.http.get<Perfil[]>(this.perfilUrl+'/listadoPerfiles/rest/'+id_perfil);
+  }
+*/
 
 }
