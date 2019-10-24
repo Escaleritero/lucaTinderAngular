@@ -12,7 +12,12 @@ export class AppComponent {
   nombre: String = "";
 
   login(form){
-    console.log(form.value); 
+   
   }
+
+addUsuario(myForm)
+{
+
+}
 
 }
