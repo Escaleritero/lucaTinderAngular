@@ -1,1 +1,6 @@
-<p *ngFor="let perfil of perfiles"> {{perfil.nombre}} </p>
+<div *ngFor="let perfil of perfiles">
+    <p > {{perfil.nombre}} </p>
+    <app-dislike perfilContacto="{{perfil.id}}" ></app-dislike> 
+</div>
+
+

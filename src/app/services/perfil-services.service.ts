@@ -28,10 +28,18 @@ export class PerfilServicesService {
   public contactos(id_perfil) {
     return this.http.get<Perfil[]>(this.perfilUrl+'/listadoPerfiles/rest/'+id_perfil);
   }
-/*
-  public contactos(id_perfil) {
-    return this.http.get<Perfil[]>(this.perfilUrl+'/listadoPerfiles/rest/'+id_perfil);
+  public contactoslikeados() {
+    return this.http.get<Perfil[]>(this.perfilUrl+'/get/likeados/');
   }
-*/
+  public contactosDescartados() {
+    return this.http.get<Perfil[]>(this.perfilUrl+'/get/descartes/');
+  }
+  public saveLike(idLike){
+    return this.http.post(this.perfilUrl+"/saveLike/rest/"+idLike,httpOptions);
+  }
+  public saveDislike(idDislike){
+    return this.http.post(this.perfilUrl+"/saveDislike/rest/"+idDislike,httpOptions);
+  }
+
 
 }

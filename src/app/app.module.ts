@@ -8,6 +8,8 @@ import { AltaPerfilComponent } from './alta-perfil/alta-perfil.component';
 import { DislikeComponent } from './components/dislike/dislike.component';
 import { ListadoComponent } from './components/listado/listado.component';
 import { PerfilComponent } from './components/perfil/perfil.component';
+import { ContactosComponent } from './components/contactos/contactos.component';
+import { DescartesComponent } from './components/descartes/descartes.component';
 
 
 @NgModule({
@@ -16,7 +18,9 @@ import { PerfilComponent } from './components/perfil/perfil.component';
     AltaPerfilComponent,
     DislikeComponent,
     ListadoComponent,
-    PerfilComponent
+    PerfilComponent,
+    ContactosComponent,
+    DescartesComponent
 
 
   ],
