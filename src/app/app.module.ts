@@ -5,11 +5,15 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AltaPerfilComponent } from './alta-perfil/alta-perfil.component';
+import { DislikeComponent } from './components/dislike/dislike.component';
+import { ListadoComponent } from './components/listado/listado.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AltaPerfilComponent
+    AltaPerfilComponent,
+    DislikeComponent,
+    ListadoComponent
   ],
   imports: [
     BrowserModule,
