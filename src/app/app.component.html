@@ -9,15 +9,93 @@
 
 
 <!-- Toolbar -->
- <a aria-label="Angular on twitter" target="_blank" rel="noopener" href="https://twitter.com/angular" title="Twitter"></a>
+<!--
+<a aria-label="Angular on twitter" target="_blank" rel="noopener" href="https://twitter.com/angular" title="Twitter"></a>
   
- <a aria-label="Angular on twitter" rel="noopener" routerLink="/crear" title="Twitter">crear </a>
- <a aria-label="Angular on twitter" rel="noopener" routerLink="/perfil" title="Twitter">perfil </a>
- <a aria-label="Angular on twitter" rel="noopener" routerLink="/listado" title="Twitter">listado de perfiles </a>
- <a aria-label="Angular on twitter" rel="noopener" routerLink="/likeados" title="Twitter">listado de contactos</a>
- <a aria-label="Angular on twitter" rel="noopener" routerLink="/descartes" title="Twitter">listado de descartes</a>
+<a aria-label="Angular on twitter" rel="noopener" routerLink="/crear" title="Twitter">crear </a>
+<a aria-label="Angular on twitter" rel="noopener" routerLink="/perfil" title="Twitter">perfil </a>
+<a aria-label="Angular on twitter" rel="noopener" routerLink="/listado" title="Twitter">listado de perfiles </a>
+<a aria-label="Angular on twitter" rel="noopener" routerLink="/likeados" title="Twitter">listado de contactos</a>
+<a aria-label="Angular on twitter" rel="noopener" routerLink="/descartes" title="Twitter">listado de descartes</a>
+-->
+
+
+<div class="titulo">
+    <img src="../src/img/robot.png" style="width: 130px">
+   <a><p style="margin-top: -30px">LucaTinder</p></a>
+</div>
 
 
 
+
+<div class="container">
+<div class="row">
+  <div class="col-md-5 mx-auto"  >
+      <div id="first">
+          <div class="myform form ">
+              <div class="logo mb-3">
+                  <div class="col-md-12 text-center">
+                      <h2>Iniciar sesión</h2>
+                  </div>
+              </div>
+
+
+              <form [formGroup]="form" novalidate>
+            <!--  action="/perfil" method="post" name="principal">  -->
+
+      
+              
+
+
+              <div class="form-group">
+                  <input type="text" name="text" field="alias"
+                      class="form-control" placeholder="Ingrese Alias de usuario"
+                      style="margin: auto">
+              </div>
+
+              <div class="col-md-12 text-center ">
+                  <button type="submit" class=" btn btn-block mybtn btn-primary tx-tfm"
+                  class="btn btn-success"
+                  (click)="sesion(form)">Entrar</button>
+              </div>
+
+           
+
+              </form>
+              
+
+
+
+              <div class="form-group" style="margin-bottom: 40px">
+                  <br>
+                  <br>
+                  <p class="text-center">¿No tienes una cuenta aún?</p>
+              </div>				
+
+      </div>
+  </div>
   
+  
+  
+  <div id="second">
+      <div class="myform form">
+          <div class="logo mb-3">
+              <div class="col-md-12 text-center">
+                  <form [formGroup]="form" novalidate>
+                  <button type="submit" class=" btn btn-block mybtn btn-primary tx-tfm"
+                  class="btn btn-success"
+                  (click)="sesion(form)">Registrarse</button>
+                  </form>
+              </div>
+              
+          </div>
+          
+      </div>
+  </div>
+</div>
+</div>
+</div>
+  
+
+
 <router-outlet></router-outlet>
