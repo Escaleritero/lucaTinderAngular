@@ -46,7 +46,7 @@
                 </div>
 
                 <div class="col-md-12 text-center ">
-                    <input type="submit" class=" btn btn-block mybtn btn-primary tx-tfm"
+                    <input value="Acceder" type="submit" class=" btn btn-block mybtn btn-primary tx-tfm"
                     class="btn btn-success">
                 </div>
 
@@ -67,15 +67,20 @@
   </div>
   
   
-  <!--
+  
   <div id="second">
       <div class="myform form">
           <div class="logo mb-3">
               <div class="col-md-12 text-center">
-                  <form [formGroup]="form" novalidate>
-                  <button type="submit" class=" btn btn-block mybtn btn-primary tx-tfm"
-                  class="btn btn-success"
-                  (click)="sesion(form)">Registrarse</button>
+                   <!-- <form #myform="ngForm" (ngSubmit)="addUsuario(myform)" class="form form-login"> -->
+                        <form #myform="ngForm" routerLink="/crear" class="form form-login">        
+                    
+     
+
+                  <input value="Registrarse" type="submit" class=" btn btn-block mybtn btn-primary tx-tfm"
+                  class="btn btn-success">
+
+
                   </form>
               </div>
               
@@ -83,7 +88,7 @@
           
       </div>
   </div>
-  -->
+  
 </div>
 </div>
 </div>
