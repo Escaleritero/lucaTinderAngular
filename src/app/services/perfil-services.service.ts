@@ -22,6 +22,10 @@ export class PerfilServicesService {
     return this.http.post<Perfil>(this.perfilUrl, perfil);
   }
 
+  public getListaPerfiles(id_perfil)
+  {
+    return this.http.get(this.perfilUrl+'/listadoPerfiles/rest/'+id_perfil);
+  }
 
 
 }
